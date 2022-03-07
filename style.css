@@ -1,0 +1,50 @@
+header{
+    margin-top: 0;
+    color: coral;
+    /* height:70; */
+    /* width: 100%; */
+    display: flex;
+    flex-wrap: wrap;   /* it's not wrap that is to blame with icon size, however check layout or image material from ed or lavanya */
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    
+}
+
+#logo{
+    /* display: flex;
+    align-items: center; */
+    background-color: blue;  
+    
+}
+
+#sosmed{
+    width: 25px;    
+    margin: 5px;
+    /* padding: 5px; */
+    /* display: flex;
+    justify-content: space-evenly; */
+    
+    background-color:  yellow;
+}
+
+/*Navigation bar*/
+
+ul{
+    height: 100%;
+    margin: 0 100px 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    background-color: black;
+    
+}
+
+ul li{
+    padding:5pxpx;
+    margin-left: 10px;
+    
+    background-color: cadetblue;
+    list-style: none;
+}
