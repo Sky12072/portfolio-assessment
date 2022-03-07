@@ -1,50 +1,90 @@
 header{
     margin-top: 0;
-    color: coral;
     /* height:70; */
     /* width: 100%; */
     display: flex;
     flex-wrap: wrap;   /* it's not wrap that is to blame with icon size, however check layout or image material from ed or lavanya */
     justify-content: center;
     align-items: center;
-    background-color: pink;
+    background-color: rgb(223, 221, 221);
     
 }
 
 #logo{
     /* display: flex;
     align-items: center; */
-    background-color: blue;  
+    width: 175px;
+    /* background-color: pink; */
+     
     
 }
 
 #sosmed{
     width: 25px;    
     margin: 5px;
+    animation: transition;
+    transition: 1s;
+    
     /* padding: 5px; */
     /* display: flex;
     justify-content: space-evenly; */
     
-    background-color:  yellow;
+    /* background-color:  yellow; */
 }
 
 /*Navigation bar*/
 
 ul{
     height: 100%;
-    margin: 0 100px 0 100px;
+    margin: 0 175px 0 100px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     
-    background-color: black;
+    /* background-color: black; */
     
 }
 
 ul li{
-    padding:5pxpx;
+    padding:5px;
     margin-left: 10px;
     
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
     list-style: none;
 }
+
+ul li:hover{
+    transform: scale(1.1, 1.1);
+    transition: 1s;
+}
+
+/* links state*/
+
+nav a:link{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+    
+}
+
+nav a:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #222222;
+    
+}
+nav a:hover{
+    text-decoration: underline overline;
+    color: rgb(155, 94, 71);
+
+}
+
+nav a:active{
+    color: #ff0000;
+}
+
+/* @keyframes transition{
+    0% {transition: 1s;}
+    100%{transition:2s;}
+} */
+
