@@ -1,6 +1,7 @@
 header{
     margin-top: 0;
-    /* height:70; */
+    /* padding: 0 20px; */
+    height:125px;
     /* width: 100%; */
     display: flex;
     flex-wrap: wrap;   /* it's not wrap that is to blame with icon size, however check layout or image material from ed or lavanya */
@@ -10,6 +11,14 @@ header{
     
 }
 
+body{
+    margin: 0 0 auto 0;
+}
+
+
+/*Navigation bar*/
+
+
 #logo{
     /* display: flex;
     align-items: center; */
@@ -18,8 +27,8 @@ header{
      
     
 }
-
-#sosmed{
+/* sosmed is each icon's values or attributes */
+#sosmed{            
     width: 25px;    
     margin: 5px;
     animation: transition;
@@ -32,17 +41,21 @@ header{
     /* background-color:  yellow; */
 }
 
-/*Navigation bar*/
+/* Menu bar links - Full Screen */
 
 ul{
     height: 100%;
-    margin: 0 175px 0 100px;
+    margin: 0 175px 0 100px;  
     display: flex;
     align-items: center;
     justify-content: space-around;
-    
+    list-style: none;
     /* background-color: black; */
     
+}
+
+ul a{
+    color:black ;
 }
 
 ul li{
@@ -50,15 +63,16 @@ ul li{
     margin-left: 10px;
     
     /* background-color: cadetblue; */
-    list-style: none;
+    
 }
+
+
+/* Menu bar links state - Full Screen */
 
 ul li:hover{
     transform: scale(1.1, 1.1);
     transition: 1s;
 }
-
-/* links state*/
 
 nav a:link{
     text-transform: uppercase;
@@ -83,8 +97,161 @@ nav a:active{
     color: #ff0000;
 }
 
-/* @keyframes transition{
-    0% {transition: 1s;}
-    100%{transition:2s;}
-} */
+/* adjust position of the burger icon container */
+#burger {
+    order: -3;
+    margin: 0 2%;
+    display: none;
+    cursor: pointer;
+}
+
+/* make burger bars - those three lines */
+#burger div {
+    width:35px;
+    height:3px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 1s;
+}
+
+
+
+
+/* Animation for burger icon connected to javascript- the X shape */
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+    opacity: 0;
+}
+
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+/* set up mobile navbar */
+.open .mobile-bar {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.mobile-bar {
+    
+    background-color: rgb(223, 221, 221);
+    display: none;
+    position: absolute;
+    top: 125px;
+    left: -100px;
+    
+      
+}
+
+
+
+
+@media only screen and (max-width: 930px) {
+    header{
+        /* background-color: blue; */
+        margin-top: 0;
+         
+        display: flex;
+        flex-wrap: wrap ; /* it's not wrap that is to blame with icon size, however check layout or image material from ed or lavanya */
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+    #logo{
+        margin-right: -105px;
+
+    }
+
+    ul{
+        margin-right: 95px;  
+    }
+}
+
+/* to hide navbar when less than 600px */
+@media only screen and (max-width: 750px) {
+    header nav {
+        display: none;
+    }
+
+    /* body{
+        background-color:;
+    } */
+
+    #logo {
+        margin: auto auto auto auto;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #sosmed {
+        margin-right: 0;
+         
+           
+    }
+    
+    ul {
+        padding-right: 50px;
+        text-decoration: none;
+    }
+    
+    
+    ul li{
+        padding-top: 100px;       
+        text-decoration: none;
+    }
+
+    ul a:link{
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #000000;
+        
+    }
+    
+    ul a:visited{
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #222222;
+        
+    }
+    ul a:hover{
+        text-decoration: underline overline;
+        color: rgb(155, 94, 71);
+    
+    }
+    
+    ul a:active{
+        color: #ff0000;
+    }
+
+    
+
+    /* .mobile-bar{
+        
+        margin: 50% 50% 50% 50%;
+        background-color: blue;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    } */
+    
+    
+
+    #burger {
+        display: block;
+    }
+    
+}
 
