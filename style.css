@@ -1,3 +1,5 @@
+/* ------------------ Navigation bar ------------------*/
+
 header{
     margin-top: 0;
     /* padding: 0 20px; */
@@ -13,11 +15,9 @@ header{
 
 body{
     margin: 0 0 auto 0;
+    /* max-width: 100%;
+    max-height: 100%; */
 }
-
-
-/*Navigation bar*/
-
 
 #logo{
     /* display: flex;
@@ -255,3 +255,87 @@ nav a:active{
     
 }
 
+
+/* ----------------------- HOME ----------------------- */
+
+#tim1-container {
+    margin: 10px 5% 10px 5%; /* uses px because I need static top space */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: brown; */
+}
+
+.tim-responsive{
+    max-width: 90%;
+    height: auto; 
+}
+
+h1 h2 {
+    display:inline-block;
+    
+}
+
+
+
+/* ----------------------- ABOUT ME ----------------------- */
+
+/* #about-me-heading {
+    display: flex;
+    justify-content: center;
+}
+
+#tim1-container {
+    margin-top: 3%;
+    display:flex;
+    justify-content: center;
+}
+
+#tim1-pic {
+    width: 515px;
+    
+}
+
+#name { 
+    position:absolute;
+    top: 60%;
+    left: 60%;    
+}
+
+#profession {
+    position:absolute;
+    top:65%;
+    left:65%;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------- FOOTER ----------------------- */
+
+#footer1 {
+    clear: right;
+    background-color: #b9b6b6;
+    column-count: 3;
+    padding: 30px;
+}
+/*footers*/
+.footer2 {
+    width: 430px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 15px;
+    
+}
+footer h4:first-child{
+    margin-top:0px;
+}
