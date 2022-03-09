@@ -27,12 +27,17 @@ body {
     max-height: 100%; */
 }
 
-main{
+.general-main{
     display:flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     flex-grow: 1;
+}
+
+article{
+    background-color: ;
+    margin: 50px;
 }
 
 #logo{
@@ -369,10 +374,7 @@ nav a:active{
     align-items: center;
 } */
 
-section{
-    background-color: ;
-    margin: 50px;
-}
+
 #myForm {
     display: flex;
     flex-direction: column;
@@ -437,19 +439,55 @@ input[type = reset]:hover {
     align-items: center;
     
     
-    /* min-height: 77vh; */
+
     
 }
 
-/* #footer3 {
+
+
+/* ------ Blog 1, Blog 2 Blog 3, Blog 4, Blog 5 TEMPLATE ------ */
+
+.blog-pictures {
+    width:800px;
+    max-width: 100%;
+    height: auto;
+    
+}
+.blog-main{
+    padding:20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog-heading {
+    margin:20px;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    
-    
-} */
+
+}
+
+.blog-article{
+    width: 800px;
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+    background-color: lightblue;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ----------------------- FOOTER ----------------------- */
@@ -460,7 +498,7 @@ footer {
     
     display:flex;
     flex-direction: column;
-    justify-content: center;
+    
     align-items: center;
     padding: 15px;
     position: absolute;
@@ -472,3 +510,5 @@ footer {
 p {
     margin: 10px;
 }
+
+
