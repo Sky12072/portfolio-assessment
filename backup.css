@@ -517,3 +517,468 @@ nav a:active{
     
 }
 
+--------------------------------------
+/* Finished Homepage, About, Contact, Thank you page */
+
+/* ------------------ Navigation bar ------------------*/
+/* *{
+    margin:0;
+} */
+
+header{
+    margin-top: 0;
+    /* padding: 0 20px; */
+    height:125px;
+    /* width: 100%; */
+    display: flex;
+    flex-wrap: wrap;   /* it's not wrap that is to blame with icon size, however check layout or image material from ed or lavanya */
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(223, 221, 221);
+    
+    
+}
+
+body{
+    margin: 0 0 auto 0;
+    min-height: 100vh;
+    /* max-width: 100%;
+    max-height: 100%; */
+}
+
+#logo{
+    /* display: flex;
+    align-items: center; */
+    width: 175px;
+    /* background-color: pink; */
+     
+    
+}
+/* sosmed is each icon's values or attributes */
+#sosmed{            
+    width: 25px;    
+    margin: 5px;
+    animation: transition;
+    transition: 1s;
+    
+    /* padding: 5px; */
+    /* display: flex;
+    justify-content: space-evenly; */
+    
+    /* background-color:  yellow; */
+}
+
+/* Menu bar links - Full Screen */
+
+ul{
+    height: 100%;
+    margin: 0 175px 0 100px;  
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    /* background-color: black; */
+    
+}
+
+ul a{
+    color:black ;
+}
+
+ul li{
+    padding:5px;
+    margin-left: 10px;
+    
+    /* background-color: cadetblue; */
+    
+}
+
+
+/* Menu bar links state - Full Screen */
+
+ul li:hover{
+    transform: scale(1.1, 1.1);
+    transition: 0.5s;
+}
+
+nav a:link{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+    
+}
+
+nav a:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #222222;
+    
+}
+nav a:hover{
+    text-decoration: underline overline;
+    color: rgb(155, 94, 71);
+
+}
+
+nav a:active{
+    color: #ff0000;
+}
+
+/* adjust position of the burger icon container */
+#burger {
+    order: -3;
+    margin: 0 2%;
+    display: none;
+    cursor: pointer;
+}
+
+/* make burger bars - those three lines */
+#burger div {
+    width:35px;
+    height:3px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 1s;
+}
+
+
+
+
+/* Animation for burger icon connected to javascript- the X shape */
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+    opacity: 0;
+}
+
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+/* set up mobile navbar */
+.open .mobile-bar {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.mobile-bar {
+    
+    background-color: rgb(223, 221, 221);
+    display: none;
+    position: absolute;
+    top: 125px;
+    left: -100px;
+    
+      
+}
+
+
+
+
+@media only screen and (max-width: 930px) {
+    header{
+        /* background-color: blue; */
+        margin-top: 0;
+         
+        display: flex;
+        flex-wrap: wrap ; /* it's not wrap that is to blame with icon size, however check layout or image material from ed or lavanya */
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+    #logo{
+        margin-right: -105px;
+
+    }
+
+    ul{
+        margin-right: 95px;  
+    }
+}
+
+/* to hide navbar when less than 600px */
+@media only screen and (max-width: 750px) {
+    header nav {
+        display: none;
+    }
+
+    /* body{
+        background-color:;
+    } */
+
+    #logo {
+        margin: auto auto auto auto;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #sosmed {
+        margin-right: 0;
+         
+           
+    }
+    
+    ul {
+        padding-right: 50px;
+        text-decoration: none;
+    }
+    
+    
+    ul li{
+        padding-top: 100px;       
+        text-decoration: none;
+    }
+
+    ul a:link{
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #000000;
+        
+    }
+    
+    ul a:visited{
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #222222;
+        
+    }
+    ul a:hover{
+        text-decoration: underline overline;
+        color: rgb(155, 94, 71);
+    
+    }
+    
+    ul a:active{
+        color: #ff0000;
+    }
+
+    
+
+    /* .mobile-bar{
+        
+        margin: 50% 50% 50% 50%;
+        background-color: blue;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    } */
+    
+    
+
+    #burger {
+        display: block;
+    }
+    
+}
+
+
+/* ----------------------- HOME ----------------------- */
+
+#tim1-container {
+    /* margin: 10px auto; /* uses px because I need static top space */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    background-image: linear-gradient(145deg , rgba(7, 7, 7, 0.5), rgb(75, 73, 73));
+}
+
+.tim-responsive{
+    max-width: 100%;
+    height: auto; 
+    background-color: blue;
+}
+
+#text-homepage {
+    display:block;
+    text-align: center;
+    color: rgb(247, 240, 240);
+}
+
+
+
+/* ----------------------- ABOUT ME ----------------------- */
+
+#about-me-heading {
+    display: flex;
+    justify-content: center;
+    
+}
+#tim2-container {
+    max-width:70%;
+    width: px;
+    margin: 0 auto; /* uses px because I need static top space */
+    display: flex;
+    justify-content: center; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: ;
+    margin-bottom: 50px;;
+    
+}
+
+#about-paragraph{
+    width: 700px;
+    max-width: 700px;
+    max-height: 50%;
+    background-color: ;
+    margin-top: 0;
+    
+    margin-bottom: px;
+    text-align: center;
+}
+
+
+
+.tim-responsive{
+    max-width: 90%;
+    height: auto; 
+    margin-left:5%;
+}
+/* #tim1-container {
+    margin-top: 3%;
+    display:flex;
+    justify-content: center;
+}
+
+#tim1-pic {
+    width: 515px;
+    
+}
+
+#name { 
+    position:absolute;
+    top: 60%;
+    left: 60%;    
+}
+
+#profession {
+    position:absolute;
+    top:65%;
+    left:65%;
+}  */
+
+/* ----------------------- CONTACT ME --------------------*/
+
+/* #contact-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+} */
+main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+
+}
+
+section{
+    background-color: ;
+    margin: 50px;
+}
+#myForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: ;
+    background-color: silver;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+}
+
+input[id=messagebox], select, textarea {
+    height: 200px;
+    width: 400px;
+
+}
+
+input[type = submit] {
+    height: 35px;
+    border-radius: 10px;
+}
+
+input[type = submit]:hover {
+    background-color: grey;
+    transition: 0.3s;
+} 
+
+input[type = reset] {
+    width: 60px;
+    border-radius: 10px;
+}
+
+input[type = reset]:hover {
+    background-color: grey;
+    transition: 0.3s;
+} 
+
+#gmap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+
+
+#map {
+    max-width: 100%;
+    height: auto; 
+}
+
+
+
+/* ----------------------- Thank You ----------------------- */
+
+#thankyou-container{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    min-height: 77vh;
+    
+}
+
+#footer3 {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+
+
+/* ----------------------- FOOTER ----------------------- */
+
+
+/*footers*/
+.footer2 {
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+

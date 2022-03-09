@@ -1,7 +1,10 @@
 /* ------------------ Navigation bar ------------------*/
+* {
+    margin:0;
+}
 
 header{
-    margin-top: 0;
+    /* margin-top: 0; */
     /* padding: 0 20px; */
     height:125px;
     /* width: 100%; */
@@ -11,12 +14,25 @@ header{
     align-items: center;
     background-color: rgb(223, 221, 221);
     
+    
 }
 
-body{
-    margin: 0 0 auto 0;
+body {
+    /* margin: 0 0 auto 0; */
+    position: relative;
+    padding-bottom: 58px;
+    min-height: 95vh;
+    background-color: ;
     /* max-width: 100%;
     max-height: 100%; */
+}
+
+main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
 }
 
 #logo{
@@ -71,7 +87,7 @@ ul li{
 
 ul li:hover{
     transform: scale(1.1, 1.1);
-    transition: 1s;
+    transition: 0.5s;
 }
 
 nav a:link{
@@ -259,13 +275,14 @@ nav a:active{
 /* ----------------------- HOME ----------------------- */
 
 #tim1-container {
-    margin: 10px auto; /* uses px because I need static top space */
+    /* margin: 10px auto; /* uses px because I need static top space */
+    padding:20px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     background-color: white;
-    background-image: linear-gradient(145deg , rgba(7, 7, 7, 0.5), rgb(75, 73, 73));
+    background-image: linear-gradient(145deg , rgba(71, 70, 70, 0.5), rgb(75, 73, 73));
 }
 
 .tim-responsive{
@@ -275,7 +292,7 @@ nav a:active{
 }
 
 #text-homepage {
-    display:block;
+    padding: 20px;
     text-align: center;
     color: rgb(247, 240, 240);
 }
@@ -287,6 +304,7 @@ nav a:active{
 #about-me-heading {
     display: flex;
     justify-content: center;
+    
 }
 #tim2-container {
     max-width:70%;
@@ -298,6 +316,8 @@ nav a:active{
     flex-wrap: wrap;
     align-items: center;
     background-color: ;
+    margin-bottom: 50px;
+    
 }
 
 #about-paragraph{
@@ -305,9 +325,8 @@ nav a:active{
     max-width: 700px;
     max-height: 50%;
     background-color: ;
-    margin-top: 0;
+    margin: 0 10px 0 10px;
     
-    margin-bottom: px;
     text-align: center;
 }
 
@@ -341,33 +360,115 @@ nav a:active{
     left:65%;
 }  */
 
+/* ----------------------- CONTACT ME --------------------*/
+
+/* #contact-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+} */
+
+section{
+    background-color: ;
+    margin: 50px;
+}
+#myForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: ;
+    background-color: silver;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+}
+
+input[id=messagebox], select, textarea {
+    height: 200px;
+    width: 400px;
+
+}
+
+input[type = submit] {
+    height: 35px;
+    border-radius: 10px;
+}
+
+input[type = submit]:hover {
+    background-color: grey;
+    transition: 0.3s;
+} 
+
+input[type = reset] {
+    width: 60px;
+    border-radius: 10px;
+}
+
+input[type = reset]:hover {
+    background-color: grey;
+    transition: 0.3s;
+} 
+
+#gmap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#map {
+    max-width: 100%;
+    height: auto; 
+}
+
+#map-title {
+    margin: 10px;
+}
 
 
 
+/* ----------------------- Thank You ----------------------- */
 
+#thankyou-container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    /* min-height: 77vh; */
+    
+}
 
-
-
-
-
+/* #footer3 {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+} */
 
 
 /* ----------------------- FOOTER ----------------------- */
 
-#footer1 {
-    clear: right;
-    background-color: #b9b6b6;
-    column-count: 3;
-    padding: 30px;
-}
+
 /*footers*/
-.footer2 {
-    width: 430px;
-    margin: 0 auto;
-    text-align: center;
+footer {
+    
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 15px;
+    position: absolute;
+    bottom: 0;
+    width:100%
     
 }
-footer h4:first-child{
-    margin-top:0px;
+
+p {
+    margin: 10px;
 }
