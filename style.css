@@ -475,19 +475,80 @@ input[type = reset]:hover {
     max-width: 100%;
     height: auto;
     padding: 20px;
-    background-color: lightblue;
+    /* background-color: ;
+    background-image: linear-gradient(145deg , rgb(222, 222, 222), rgb(9, 181, 238));
+    box-shadow: 0 0 10px 10px rgba(0, 140, 186, 0.5); */
 }
 
+/* ----------------------- BLOGS PAGE ----------------------- */
+
+/* 
+1.use individual flexbox to organise picture including background-border
+with titles 
+2. Make seperate container for each image to design background and 
+title and then wrapped all 5 images with another container if necessary
+3. maybe put hover not on the image, but the image container so it'll 
+include the text too.
+*/
 
 
+.image-size{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: rgb(92, 92, 92);
+    
+}
 
+.thumbnail-text:hover{
+    box-shadow: 0 0 10px 10px rgba(0, 140, 186, 0.5);
+    transition: 0.3s;
+    transform: scale(1.1, 1.1);
+}
 
+#blog-mainbody{
+    display: flex;  
+    justify-content: center;
+}
 
+.image-direction1{
+    width: 1500px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: ;
+    margin-bottom: 50px;;
+}
 
+.empty-box{
+    margin:50px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: 1px;
+    border-radius: 4px;
+    padding: 5px;
+    /* background-color: rgb(92, 92, 92); */
+}
 
+.thumbnail-text{
+    max-width: 450px;
+    height: auto;
+    display:flex;
+    flex-direction: row;
+    background-color: ;
+    margin: 15px;
 
+}
 
-
+.thumbnail-description{
+    padding-left: 10px;
+}
 
 
 /* ----------------------- FOOTER ----------------------- */
