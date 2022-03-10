@@ -1,4 +1,3 @@
-/* ------------------ Navigation bar ------------------*/
 * {
     margin:0;
 }
@@ -196,6 +195,7 @@ nav a:active{
         margin-right: 95px;  
     }
     
+    
 }
 
 /* to hide navbar when less than 600px */
@@ -256,24 +256,21 @@ nav a:active{
     ul a:active{
         color: #ff0000;
     }
-
     
-
-    /* .mobile-bar{
-        
-        margin: 50% 50% 50% 50%;
-        background-color: blue;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    } */
-    
-    
-
     #burger {
         display: block;
     }
+    
+    .thumbnail-text{
+        max-width: 450px;
+        height: auto;
+        display:flex;
+        flex-direction: column;
+        background-color: ;
+        margin: 15px;
+    
+    }
+
     
 }
 
@@ -368,12 +365,18 @@ nav a:active{
 
 /* ----------------------- CONTACT ME --------------------*/
 
-/* #contact-container{
+#contact-container{
     display:flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-} */
+    background-color: ;
+    
+}
+#contact-heading{
+    margin: 0 0 20px 30px;
+}
 
 
 #myForm {
@@ -384,11 +387,12 @@ nav a:active{
     background-color: silver;
     padding: 10px 10px 10px 10px;
     border-radius: 10px;
+    margin: 20px;
 }
 
 input[id=messagebox], select, textarea {
     height: 200px;
-    width: 400px;
+    width: 350px;
 
 }
 
@@ -431,6 +435,7 @@ input[type = reset]:hover {
 
 
 
+
 /* ----------------------- Thank You ----------------------- */
 
 #thankyou-container {
@@ -438,8 +443,7 @@ input[type = reset]:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
+    margin:50px;  
 
     
 }
@@ -504,11 +508,7 @@ include the text too.
     
 }
 
-.thumbnail-text:hover{
-    box-shadow: 0 0 10px 10px rgba(0, 140, 186, 0.5);
-    transition: 0.3s;
-    transform: scale(1.1, 1.1);
-}
+
 
 #blog-mainbody{
     display: flex;  
@@ -560,9 +560,29 @@ include the text too.
         display: none;
     }
     
+    
 }
 
+@media only screen and (min-width: 930px) {
+    .thumbnail-text:hover{
+        box-shadow: 0 0 10px 10px #d7be69;
+        transition: 0.3s;
+        transform: scale(1.1, 1.1);
+    }
+    
+}
 
+@media only screen and (max-width: 600px) {
+    .thumbnail-text{
+        max-width: 250px;
+        height: auto;
+        display:flex;
+        flex-direction: column;
+        background-color: ;
+        margin: 15px;
+    
+    }
+}
 
 
 
@@ -576,7 +596,7 @@ footer {
     flex-direction: column;
     
     align-items: center;
-    padding: 15px;
+    
     position: absolute;
     bottom: 0;
     width:100%
@@ -586,5 +606,3 @@ footer {
 p {
     margin: 10px;
 }
-
-
