@@ -195,6 +195,7 @@ nav a:active{
     ul{
         margin-right: 95px;  
     }
+    
 }
 
 /* to hide navbar when less than 600px */
@@ -522,7 +523,7 @@ include the text too.
     justify-content: center;
     align-items: center;
     background-color: ;
-    margin-bottom: 50px;;
+    margin-bottom: 50px;
 }
 
 .empty-box{
@@ -549,6 +550,20 @@ include the text too.
 .thumbnail-description{
     padding-left: 10px;
 }
+
+@media only screen and (max-width: 1560px) {
+    .image-direction1{
+        width: 600px;
+        margin-top: 32px;
+    }
+    .empty-box{
+        display: none;
+    }
+    
+}
+
+
+
 
 
 /* ----------------------- FOOTER ----------------------- */
