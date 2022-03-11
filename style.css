@@ -286,6 +286,7 @@ nav a:active{
     align-items: center;
     background-color: white;
     background-image: linear-gradient(145deg , rgba(71, 70, 70, 0.5), rgb(75, 73, 73));
+    margin-bottom: 50px;
 }
 
 .tim-responsive{
@@ -304,9 +305,10 @@ nav a:active{
 
 /* ----------------------- ABOUT ME ----------------------- */
 
-#about-me-heading {
+.about-me-heading {
     display: flex;
     justify-content: center;
+    margin:20px;
     
 }
 #tim2-container {
@@ -329,8 +331,8 @@ nav a:active{
     max-height: 50%;
     background-color: ;
     margin: 0 10px 0 10px;
-    
     text-align: center;
+    background-color: ;
 }
 
 
@@ -340,6 +342,88 @@ nav a:active{
     height: auto; 
     margin-left:5%;
 }
+
+#resume{
+    display: inline-block;
+    width:200px;
+    margin-top:50px;
+    background-color: lightgray;
+    
+}
+
+#follow-my-projects-title{
+    margin:50px;
+    width:200px;
+    display: inline-block;
+    background-color: lightgray;
+}
+
+
+
+
+.resume-link:link{
+    text-transform: ;
+    text-decoration: none;
+    color: #000000;
+    
+}
+
+.resume-link:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #222222;
+    
+}
+
+
+.resume-link:active{
+    color: #ff0000;
+}
+p{
+    display:inline-block;
+}
+
+
+/* Projects Anchored page */
+
+.projects-pictures {
+    width:800px;
+    max-width: 100%;
+    height: auto;
+    
+}
+.projects-main{
+    padding:20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-heading {
+    margin:20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.projects-article{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 800px;
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+    background-color: ;
+    margin: 0;
+    
+}
+
 /* #tim1-container {
     margin-top: 3%;
     display:flex;
@@ -389,7 +473,11 @@ nav a:active{
     border-radius: 10px;
     margin: 20px;
 }
-
+#information-heading{
+    display: flex;
+    flex-direction: column;
+    margin:50px;
+}
 input[id=messagebox], select, textarea {
     height: 200px;
     width: 350px;
