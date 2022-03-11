@@ -654,8 +654,13 @@ include the text too.
 }
 
 .thumbnail-description{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 250px;
     padding-left: 10px;
     padding-bottom:10px;
+    background-color: red;
 }
 
 @media only screen and (max-width: 1560px) {
