@@ -32,6 +32,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     flex-grow: 1;
+    margin-bottom: 30px;
 }
 
 article{
@@ -358,7 +359,9 @@ nav a:active{
     background-color: lightgray;
 }
 
-
+.projects-main{
+    margin-bottom:50px;
+}
 
 
 .resume-link:link{
@@ -510,12 +513,13 @@ input[type = reset]:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
+    
 }
 
 #map {
     max-width: 100%;
     height: auto; 
+    margin-bottom:50px;
 }
 
 #map-title {
@@ -686,7 +690,7 @@ footer {
     display:flex;
     flex-direction: column;
     align-items: center;
-    background-color: red;
+    background-color: ;
     position: absolute;
     bottom: 0;
     width:100%;
