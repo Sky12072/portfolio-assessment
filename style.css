@@ -302,6 +302,29 @@ nav a:active{
     color: rgb(247, 240, 240);
 }
 
+#find-out-more-about-me{
+    text-align: center;
+    color: rgb(247, 240, 240);
+}
+
+#find-out-more-about-me:link{
+    
+    text-decoration: none;
+    color: rgb(247, 240, 240);
+    
+}
+
+#find-out-more-about-me:visited{
+    
+    text-decoration: none;
+    color: rgb(247, 240, 240);
+    
+}
+
+
+#find-out-more-about-me:active{
+    color: rgb(247, 240, 240);
+}
 
 
 /* ----------------------- ABOUT ME ----------------------- */
@@ -365,16 +388,16 @@ nav a:active{
     margin-bottom:50px;
 }
 
-
+/* Resume link css to take text-decoration and other default link property off */
 .resume-link:link{
-    text-transform: ;
+    
     text-decoration: none;
     color: #000000;
     
 }
 
 .resume-link:visited{
-    text-transform: uppercase;
+    
     text-decoration: none;
     color: #222222;
     
@@ -570,6 +593,7 @@ input[type = reset]:hover {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin:50px;
 }
 
 .blog-heading {
@@ -586,10 +610,31 @@ input[type = reset]:hover {
     max-width: 100%;
     height: auto;
     padding: 20px;
+    
     /* background-color: ;
     background-image: linear-gradient(145deg , rgb(222, 222, 222), rgb(9, 181, 238));
     box-shadow: 0 0 10px 10px rgba(0, 140, 186, 0.5); */
 }
+
+.blog12345:link{
+    
+    text-decoration: none;
+    color: #000000;
+    
+}
+
+.blog12345:visited{
+    
+    text-decoration: none;
+    color: #222222;
+    
+}
+
+
+.blog12345:active{
+    color: #ff0000;
+}
+
 
 /* ----------------------- BLOGS PAGE ----------------------- */
 
