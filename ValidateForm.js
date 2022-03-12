@@ -20,7 +20,7 @@ function validateName() {
 
     else {                      //invalid condition
         document.getElementById("txtName_Help").innerText =
-            "Name must contain at least two letters (lowercase and uppercase)";
+            "Name must contain at least two letters (uppercase and lowercase)";
         return false;
     }
 }
