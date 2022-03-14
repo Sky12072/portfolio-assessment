@@ -1,5 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
 * {
     margin:0;
+    font-family: 'Times New Roman', 'Arial', sans-serif;
+}
+
+
+
+p{
+    font-family: Verdana, 'Geneva', Tahoma, sans-serif;
 }
 
 header{
@@ -309,6 +319,12 @@ In this case, Google Chrome and Safari. */
     padding: 0px;
     /* display:flex; */
     color: rgb(247, 240, 240);
+    max-width: 60%;
+    height: auto;
+
+    padding: 20px;
+    margin-bottom:30px;
+    text-align: center;
 }
 
 /* #tim1-container {
@@ -323,18 +339,23 @@ In this case, Google Chrome and Safari. */
 }  */
 
 #name { 
-    width:fit-content;
+
+    font-family: 'Pacifico', cursive;
+    font-weight: ;
+    /* width: fit-content;
+    font-size: calc(1.5vw + 1.5vh);
     /* max-width: 100%;
     height: auto; */
-    position:relative;
+
+    /* position:relative;
     top: -270px;
     left: 40px;    
     background-color: rgba(0, 0, 0, 0.488);
     
-    border-radius: 10px;
+    border-radius: 10px; */ 
 } 
 
-#profession {
+/* #profession {
     position:relative;
     width:fit-content;
     top:-280px;
@@ -342,18 +363,25 @@ In this case, Google Chrome and Safari. */
     background-color: rgba(0, 0, 0, 0.488);
     margin:10px;
     border-radius: 10px;
-}  
+}   */
 
 #gold-line {
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width:350px;
+    /* position:absolute;
+    top: 83vh;
+    left: 39.5vw; */
+
+
+    margin: 20px;
+    /* text-align: center; */
+    width: 300px;
+    min-width: auto;
     height:3px;
     background-color: #d7be69;
-    margin-top:-70px;
-    margin-bottom: 30px;
+
+
+    margin-top:-30px;
+    /* margin-bottom: 30px;
+    margin-left: 9vw; */
     
 }
 
@@ -361,7 +389,7 @@ In this case, Google Chrome and Safari. */
 #find-out-more-about-me{
     text-align: center;
     color: rgb(247, 240, 240);
-    
+    font-family: 'Roboto';
 }
 
 #find-out-more-about-me:link{
@@ -790,6 +818,7 @@ footer {
     margin-bottom:20px;
     display:flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     background-color: ;
     position: absolute;
@@ -797,6 +826,11 @@ footer {
     width:100%;
     
     
+    
+}
+
+.copyright{
+    font-family: 'Times New Roman', Times, serif;
 }
 
 p {
