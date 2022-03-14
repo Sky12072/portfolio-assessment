@@ -139,18 +139,26 @@ nav a:active{
 
 
 /* Animation for burger icon connected to javascript- the X shape */
+/* .open is a boolean attribute. 
+it specifies that the details should be visible (open) by default */
+/* The webkit extension helps you target specific browsers. 
+In this case, Google Chrome and Safari. */
+
+/* burger line 1 */
 .open .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
-    transform: rotate(-45deg) translate(-6px, 6px);
+    -webkit-transform: rotate(45deg) translate(6px, 6px);
+    transform: rotate(45deg) translate(6px, 6px);
 }
 
+/* burger line 2 */
 .open .bar2 {
     opacity: 0;
 }
 
+/* burger line 3 */
 .open .bar3 {
-    -webkit-transform: rotate(45deg) translate(-6px, -8px);
-    transform: rotate(45deg) translate(-6px, -8px);
+    -webkit-transform: rotate(-45deg) translate(6px, -8px);
+    transform: rotate(-45deg) translate(6px, -8px);
 }
 
 /* set up mobile navbar */
@@ -162,7 +170,6 @@ nav a:active{
 }
 
 .mobile-bar {
-    
     background-color: rgb(223, 221, 221);
     display: none;
     position: absolute;
@@ -287,7 +294,9 @@ nav a:active{
     align-items: center;
     background-color: white;
     background-image: linear-gradient(145deg , rgba(71, 70, 70, 0.5), rgb(75, 73, 73));
-    margin-bottom:50px;
+    margin-bottom: 50px;
+
+
 }
 
 .tim-responsive{
@@ -297,14 +306,62 @@ nav a:active{
 }
 
 #text-homepage {
-    padding: 20px;
-    text-align: center;
+    padding: 0px;
+    /* display:flex; */
     color: rgb(247, 240, 240);
 }
+
+/* #tim1-container {
+    margin-top: 3%;
+    display:flex;
+    justify-content: center;
+}
+*/
+/* #tim1-pic {
+    margin: 0;
+    background-color: ;
+}  */
+
+#name { 
+    width:fit-content;
+    /* max-width: 100%;
+    height: auto; */
+    position:relative;
+    top: -270px;
+    left: 40px;    
+    background-color: rgba(0, 0, 0, 0.488);
+    
+    border-radius: 10px;
+} 
+
+#profession {
+    position:relative;
+    width:fit-content;
+    top:-280px;
+    left:120px;
+    background-color: rgba(0, 0, 0, 0.488);
+    margin:10px;
+    border-radius: 10px;
+}  
+
+#gold-line {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:350px;
+    height:3px;
+    background-color: #d7be69;
+    margin-top:-70px;
+    margin-bottom: 30px;
+    
+}
+
 
 #find-out-more-about-me{
     text-align: center;
     color: rgb(247, 240, 240);
+    
 }
 
 #find-out-more-about-me:link{
@@ -464,28 +521,6 @@ p{
     
 }
 
-/* #tim1-container {
-    margin-top: 3%;
-    display:flex;
-    justify-content: center;
-}
-
-#tim1-pic {
-    width: 515px;
-    
-}
-
-#name { 
-    position:absolute;
-    top: 60%;
-    left: 60%;    
-}
-
-#profession {
-    position:absolute;
-    top:65%;
-    left:65%;
-}  */
 
 /* ----------------------- CONTACT ME --------------------*/
 
