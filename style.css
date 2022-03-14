@@ -1,9 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Quattrocento&display=swap');
 
 * {
     margin:0;
-    font-family: 'Times New Roman', 'Arial', sans-serif;
+    /* font-family: 'Times New Roman', 'Arial', sans-serif; */
+    /* font-family: 'Italiana', sans-serif, 'Times New Roman'; */
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-family: 'DM Serif Display','Quattrocento', 'Times New Roman';
 }
 
 
@@ -340,8 +343,8 @@ In this case, Google Chrome and Safari. */
 
 #name { 
 
-    font-family: 'Pacifico', cursive;
-    font-weight: ;
+    /* font-family: 'Pacifico', cursive; */
+    /* font-weight: ; */
     /* width: fit-content;
     font-size: calc(1.5vw + 1.5vh);
     /* max-width: 100%;
