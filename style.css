@@ -11,9 +11,15 @@
 
 
 
-/* p{
-    font-family: Verdana, 'Geneva', Tahoma, sans-serif;
-} */
+.special-paragraph{
+    font-family: 'DM Serif Display','Quattrocento', 'Times New Roman';
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    margin:10px;
+}
+
 
 header{
     /* margin-top: 0; */
@@ -152,7 +158,7 @@ nav a:active{
 
 
 /* Animation for burger icon connected to javascript- the X shape */
-/* .open is a boolean attribute. 
+/* .open is a boolean attribute. (to show or not to show)
 it specifies that the details should be visible (open) by default */
 /* The webkit extension helps you target specific browsers. 
 In this case, Google Chrome and Safari. */
@@ -832,10 +838,8 @@ footer {
     
 }
 
-.copyright{
+/* .copyright{
     font-family: 'Times New Roman', Times, serif;
-}
+} */
 
-p {
-    margin: 10px;
-}
+
