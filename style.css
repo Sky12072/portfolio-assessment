@@ -166,7 +166,7 @@ In this case, Google Chrome and Safari. */
 /* burger line 1 */
 .open .bar1 {
     -webkit-transform: rotate(45deg) translate(6px, 6px);
-    transform: rotate(45deg) translate(6px, 6px);
+    transform: rotate(45deg) translate(5px, 6px);
 }
 
 /* burger line 2 */
@@ -194,6 +194,7 @@ In this case, Google Chrome and Safari. */
     position: absolute;
     top: 125px;
     left: -100px;
+    z-index: 1;
     
       
 }
