@@ -14,3 +14,7 @@ but golden animated lines on home pic
 fix about me profile - say about your journey
 Add sprinkles on ppt
 Prepare for what to say on ppt and make sure it's 10min. practice (make sure you make time for actual web preview and Q&A)
+
+
+
+add readme line 27 hyperlink 'this' folder
