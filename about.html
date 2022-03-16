@@ -13,12 +13,13 @@
 <body>
 
     <header>
-        <div class="navbar"></div>
-        <div>
+        <!-- Logo -->
+        <figure>
             <a href="./index.html">
                 <img id="logo" src="/images/logo4.png" alt="logo tim">
             </a>
-        </div>
+        </figure>
+        <!-- Navigation bar menu -->
         <nav>
             <ul>
                 <li><a href="./index.html">Home</a></li>
@@ -27,33 +28,35 @@
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
-        <div>
+        <!-- Clickable social media icons -->
+        <figure>
             <a href="https://github.com/Sky12072"><img id="sosmed" src="/images/github.png" alt="github icon"></a>
             <a href="https://www.linkedin.com/in/timotius-mogot-3b5b81187"><img id="sosmed" src="/images/linkedin.png"
                     alt="linkedin icon"></a>
             <a href="https://www.instagram.com/staticdynamic_/"><img id="sosmed" src="/images/instagram.png"
                     alt="instagram icon"></a>
-        </div>
-        <div id="burger" onclick="toggleMobileMenu(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+        </figure>
+        <!-- Burger and Navbar menu for mobile version -->
+        <figure id="burger" onclick="toggleMobileMenu(this)">
+            <!-- 3 bar lines -->
+            <figure class="bar1"></figure>
+            <figure class="bar2"></figure>
+            <figure class="bar3"></figure>
             <ul class="mobile-bar">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./blogs.html">Blogs</a></li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
-        </div>
-        </div>
-
+        </figure>
     </header>
 
+    <!-- About me heading -->
     <h1 class="about-me-heading" id="back-to-top">About Me</h1>
-
+    <!-- About me description -->
     <main class="general-main" id="tim2-container">
 
-        <div><img src="/images/tim2.JPG" alt="tim-pic2" class="tim-responsive" width="425px" height="636"></div>
+        <figure><img src="/images/tim2.JPG" alt="tim-pic2" class="tim-responsive" width="425px" height="636"></figure>
         <article class="special-paragraph" id="about-paragraph">
             <p class="special-paragraph">It's quite a long journey to get me here in the IT Bootcamp. Firstly, a little of my background. I enjoyed playing musical 
                 instruments and this has led me to come to Australia to study music further then followed by both study and work in business 
@@ -64,27 +67,27 @@
             <p class="special-paragraph">My plan is to delve into IT for the next decades if possible, starting with web development and once I gained some work experience 
                 I'd like to learn further and hopefully be able to specialise in a higher skill within the IT industry.
             </p>
-            <div>
+            <!-- Container for seperate lines where I can update my current skills and skills yet to learn -->
+            <figure>
                 <p class="special-paragraph">
                     My current skills: HTML, CSS, Javascript. 
                 </p>
                 <p class="special-paragraph">
                     Skills to develop: Ruby, Ruby on Rails, MongoDB
                 </p>
-            </div>
-            <div id="resume">
+            </figure>
+            <!-- Downloadable resume -->
+            <figure id="resume">
                 <h3><a class="resume-link" href="/images/resume.pdf">Download Resume</a></h3>
-            </div>
-            <div id="follow-my-projects-title">
+            </figure>
+            <!-- This link will jump user to my project section -->
+            <figure id="follow-my-projects-title">
                 <h3><a class="resume-link" href="#jumpto-myprojects">Follow My Projects</a></h3>
-            </div>
-
+            </figure>
         </article>
-
-        <!-- create 3 more div: download resume, project button and project page -->
-
     </main>
 
+    <!-- Second main: My projects section -->
     <h1 id="jumpto-myprojects" class="about-me-heading">My Projects</h1>
     <main class="projects-main">
         <article class="yearly-projects-title">
@@ -115,9 +118,10 @@
         </article>
         <article class="projects-article">
             <h3 class="projects-heading">Project 1</h3>
-            <div>
+            <!-- Project image -->
+            <figure>
                 <img class="projects-pictures" src="/images/Project1.jpg" alt="Project 1 img">
-            </div>
+            </figure>
             <p>
                 Tempor minim sunt labore sint ea est esse velit voluptate esse velit dolore in qui. Elit nisi est tempor
                 eu consectetur aliqua proident dolor veniam irure incididunt. Cillum sit aute aute eiusmod anim
@@ -145,9 +149,10 @@
 
         <article class="projects-article">
             <h3 class="projects-heading">Project 2</h3>
-            <div>
+            <!-- Project image -->
+            <figure>
                 <img class="projects-pictures" src="/images/Project2.png" alt="Project 2 img">
-            </div>
+            </figure>
             <p>
                 Tempor minim sunt labore sint ea est esse velit voluptate esse velit dolore in qui. Elit nisi est tempor
                 eu consectetur aliqua proident dolor veniam irure incididunt. Cillum sit aute aute eiusmod anim
@@ -175,9 +180,10 @@
 
         <article class="projects-article">
             <h3 class="projects-heading">Project 3</h3>
-            <div>
+            <!-- Project image -->
+            <figure>
                 <img class="projects-pictures" src="/images/Project3.jpg" alt="Project 3 img">
-            </div>
+            </figure>
             <p>
                 Tempor minim sunt labore sint ea est esse velit voluptate esse velit dolore in qui. Elit nisi est tempor
                 eu consectetur aliqua proident dolor veniam irure incididunt. Cillum sit aute aute eiusmod anim
@@ -202,21 +208,24 @@
 
             </p>
         </article>
-        <div>
+        <!-- Back to top button (has similar link styling to 'resume-link' ) -->
+        <figure>
             <h3><a class="resume-link" href="#back-to-top">back to top</a></h3>
-        </div>
+        </figure>
     </main>
 
     <footer>
         <p class="copyright">Copyright &copy 2022 by Timotius Mogot. All rights reserved.</p>
-        <div>
+        <!-- Clickable social media icons -->
+        <figure>
             <a href="https://github.com/Sky12072"><img id="sosmed" src="/images/github.png" alt="github icon"></a>
             <a href="https://www.linkedin.com/in/timotius-mogot-3b5b81187"><img id="sosmed" src="/images/linkedin.png"
                     alt="linkedin icon"></a>
             <a href="https://www.instagram.com/staticdynamic_/"><img id="sosmed" src="/images/instagram.png"
                     alt="instagram icon"></a>
-        </div>
+            </figure>
     </footer>
+    <!-- Script to activate mobile navbar -->
     <script src="index.js"></script>
 </body>
 

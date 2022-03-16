@@ -13,12 +13,13 @@
 <body>
 
     <header>
-        <div class="navbar"></div>
-        <div>
+        <!-- Logo -->
+        <figure>
             <a href="./index.html">
                 <img id="logo" src="/images/logo4.png" alt="logo tim">
             </a>
-        </div>
+        </figure>
+        <!-- Navigation bar menu -->
         <nav>
             <ul>
                 <li><a href="./index.html">Home</a></li>
@@ -27,39 +28,42 @@
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
-        <div>
+        <!-- Clickable social media icons -->
+        <figure>
             <a href="https://github.com/Sky12072"><img id="sosmed" src="/images/github.png" alt="github icon"></a>
             <a href="https://www.linkedin.com/in/timotius-mogot-3b5b81187"><img id="sosmed" src="/images/linkedin.png"
                     alt="linkedin icon"></a>
             <a href="https://www.instagram.com/staticdynamic_/"><img id="sosmed" src="/images/instagram.png"
                     alt="instagram icon"></a>
-        </div>
-        <div id="burger" onclick="toggleMobileMenu(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+        </figure>
+        <!-- Burger and Navbar menu for mobile version -->
+        <figure id="burger" onclick="toggleMobileMenu(this)">
+            <!-- 3 bar lines -->
+            <figure class="bar1"></figure>
+            <figure class="bar2"></figure>
+            <figure class="bar3"></figure>
             <ul class="mobile-bar">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./blogs.html">Blogs</a></li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
-        </div>
-        </div>
+        </figure>
     </header>
 
     <main class="blog-main">
 
+        <!-- Title and date -->
         <article class="blog-heading" id="back-to-top">
             <h1 class="blog-heading">Exercise</h1>
             <h4 class="blog-heading">March 9, 2022 &ensp; &ndash; &ensp; 5min read</h4>
-
-
         </article>
+
+        <!-- blog image and article -->
         <article class="blog-article">
-            <div>
+            <figure>
                 <img class="blog-pictures" src="/images/exercise.jpg" alt="Exercise pic">
-            </div>
+            </figure>
             <p>
                 Est quis non sint nisi laborum reprehenderit id adipisicing. Eiusmod elit adipisicing aliquip eiusmod in
                 labore nisi qui commodo in. Magna ut tempor nulla adipisicing.
@@ -90,27 +94,25 @@
                 irure est nostrud consectetur elit esse est.
             </p>
         </article>
-        <div>
+
+        <!-- Back to top button (has similar link styling to 'resume-link' ) -->
+        <figure>
             <h3><a class="blog12345" href="#back-to-top">back to top</a></h3>
-        </div>
+        </figure>
     </main>
-
-
-
-
-
-
 
     <footer>
         <p class="copyright">Copyright &copy 2022 by Timotius Mogot. All rights reserved.</p>
-        <div>
+        <!-- Clickable social media icons -->
+        <figure>
             <a href="https://github.com/Sky12072"><img id="sosmed" src="/images/github.png" alt="github icon"></a>
             <a href="https://www.linkedin.com/in/timotius-mogot-3b5b81187"><img id="sosmed" src="/images/linkedin.png"
                     alt="linkedin icon"></a>
             <a href="https://www.instagram.com/staticdynamic_/"><img id="sosmed" src="/images/instagram.png"
                     alt="instagram icon"></a>
-        </div>
+            </figure>
     </footer>
+    <!-- Script to activate mobile navbar -->
     <script src="index.js"></script>
 
 </body>

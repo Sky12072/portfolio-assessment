@@ -13,12 +13,13 @@
 <body>
 
     <header>
-        <div class="navbar"></div>
-        <div>
+        <!-- Logo -->
+        <figure>
             <a href="./index.html">
                 <img id="logo" src="/images/logo4.png" alt="logo tim">
             </a>
-        </div>
+        </figure>
+        <!-- Navigation bar menu -->
         <nav>
             <ul>
                 <li><a href="./index.html">Home</a></li>
@@ -27,32 +28,38 @@
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
-        <div>
+        <!-- Clickable social media icons -->
+        <figure>
             <a href="https://github.com/Sky12072"><img id="sosmed" src="/images/github.png" alt="github icon"></a>
             <a href="https://www.linkedin.com/in/timotius-mogot-3b5b81187"><img id="sosmed" src="/images/linkedin.png"
                     alt="linkedin icon"></a>
             <a href="https://www.instagram.com/staticdynamic_/"><img id="sosmed" src="/images/instagram.png"
                     alt="instagram icon"></a>
-        </div>
-        <div id="burger" onclick="toggleMobileMenu(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+        </figure>
+        <!-- Burger and Navbar menu for mobile version -->
+        <figure id="burger" onclick="toggleMobileMenu(this)">
+            <!-- 3 bar lines -->
+            <figure class="bar1"></figure>
+            <figure class="bar2"></figure>
+            <figure class="bar3"></figure>
             <ul class="mobile-bar">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./blogs.html">Blogs</a></li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
-        </div>
-        </div>
+        </figure>
     </header>
 
     <main>
+        <!-- First contact container: to wrap contact form and contact details together -->
         <article id="contact-container">
 
-            <div id="test">
+            <!-- Second contact container: to wrap Contact form title and contact form itself-->
+            <figure id="test">
                 <h1 id="contact-heading">Contact Form</h1>
+
+                <!-- Third contact container: Only for contact form elements -->
                 <form form novalidate id="myForm" class="form-responsive" method="get" action="thankyou.html">
                     <label for="txtName"> Name:</label>
                     <input class="form-responsive" id="txtName" type="text" />
@@ -75,18 +82,20 @@
 
 
                 </form>
-            </div>
-            <br />
-            <div id="information-heading">
+            </figure>
+            
+            <!-- Contact details -->
+            <figure id="information-heading">
                 <h1>Information</h1>
                 <p>Timotius Mogot</p>
                 <p>Phone: 0435 123 123</p>
                 <p>644 George st</p>
                 <p>Sydney NSW 2000</p>
-            </div>
+            </figure>
 
         </article>
 
+        <!-- Google map and title -->
         <article id="gmap">
 
             <h1 id="map-title">How to get to me</h1>
@@ -100,15 +109,16 @@
 
     <footer>
         <p class="copyright">Copyright &copy 2022 by Timotius Mogot. All rights reserved.</p>
-        <div>
+        <!-- Clickable social media icons -->
+        <figure>
             <a href="https://github.com/Sky12072"><img id="sosmed" src="/images/github.png" alt="github icon"></a>
             <a href="https://www.linkedin.com/in/timotius-mogot-3b5b81187"><img id="sosmed" src="/images/linkedin.png"
                     alt="linkedin icon"></a>
             <a href="https://www.instagram.com/staticdynamic_/"><img id="sosmed" src="/images/instagram.png"
                     alt="instagram icon"></a>
-        </div>
+            </figure>
     </footer>
-    <!-- this is for burger navbar menu -->
+    <!-- Script to activate mobile navbar -->
     <script src="index.js"></script>
     <!-- this is for email validation -->
     <script type="text/javascript" src="ValidateForm.js"></script>

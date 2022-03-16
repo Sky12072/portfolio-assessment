@@ -13,12 +13,13 @@
 <body>
 
     <header>
-        <div class="navbar"></div>
-        <div>
+        <!-- Logo -->
+        <figure>
             <a href="./index.html">
                 <img id="logo" src="/images/logo4.png" alt="logo tim">
             </a>
-        </div>
+        </figure>
+        <!-- Navigation bar menu -->
         <nav>
             <ul>
                 <li><a href="./index.html">Home</a></li>
@@ -27,63 +28,59 @@
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
-        <div>
+        <!-- Clickable social media icons -->
+        <figure>
             <a href="https://github.com/Sky12072"><img id="sosmed" src="/images/github.png" alt="github icon"></a>
             <a href="https://www.linkedin.com/in/timotius-mogot-3b5b81187"><img id="sosmed" src="/images/linkedin.png"
                     alt="linkedin icon"></a>
             <a href="https://www.instagram.com/staticdynamic_/"><img id="sosmed" src="/images/instagram.png"
                     alt="instagram icon"></a>
-        </div>
-        <div id="burger" onclick="toggleMobileMenu(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+        </figure>
+        <!-- Burger and Navbar menu for mobile version -->
+        <figure id="burger" onclick="toggleMobileMenu(this)">
+            <!-- 3 bar lines -->
+            <figure class="bar1"></figure>
+            <figure class="bar2"></figure>
+            <figure class="bar3"></figure>
             <ul class="mobile-bar">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./blogs.html">Blogs</a></li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
-        </div>
-        </div>
+        </figure>
     </header>
 
+    <!-- My name title and my picture -->
     <main class="general-main" id="tim1-container">
-        <div><img id="tim1-pic" src="/images/tim1.jpg" alt="Tim profile pic" class="tim-responsive" width="500px" height="638px">
-            
-            
-        </div>
+        <figure>
+            <img id="tim1-pic" src="/images/tim1.jpg" alt="Tim profile pic" class="tim-responsive" width="500px" height="638px">
+        </figure>
         
-        <div id="text-homepage">
+        <figure id="text-homepage">
             <h1 id="name">Timotius Mogot</h1>
             <h2 id="profession">Web Developer</h2>
             
-        </div>
-
-        <div id="gold-line"></div>
+        </figure>
+        <!-- The gold line seperator -->
+        <figure id="gold-line"></figure>
         
+        <!-- This find out about me link will direct user to 'about me' page -->
         <h4><a href="./about.html" id="find-out-more-about-me">Find out more about me</a></h4>
-        
     </main>
-
-
-
-
-
-
 
     <footer>
         <p class="copyright">Copyright &copy 2022 by Timotius Mogot. All rights reserved.</p>
-        <div>
+        <!-- Clickable social media icons -->
+        <figure>
             <a href="https://github.com/Sky12072"><img id="sosmed" src="/images/github.png" alt="github icon"></a>
             <a href="https://www.linkedin.com/in/timotius-mogot-3b5b81187"><img id="sosmed" src="/images/linkedin.png"
                     alt="linkedin icon"></a>
             <a href="https://www.instagram.com/staticdynamic_/"><img id="sosmed" src="/images/instagram.png"
                     alt="instagram icon"></a>
-        </div>
+            </figure>
     </footer>
+    <!-- Script to activate mobile navbar -->
     <script src="index.js"></script>
-
 </body>
-
 </html>

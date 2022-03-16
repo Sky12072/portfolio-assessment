@@ -735,7 +735,7 @@ include the text too.
 }
 
 
-
+/* To position main blog container in the center */
 #blog-mainbody{
     display: flex;  
     justify-content: center;
