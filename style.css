@@ -555,9 +555,26 @@ p{
     max-width: 100%;
     height: auto;
     padding: 20px;
-    background-color: ;
+    /* background-color: ; */
     margin:0px;
+}
+
+.projects-list{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* align-items: center;
+    justify-content: flex-start; */
+    /* background-color: red; */
+    color: brown;
+    padding: 30px 30px 30px 30px;
     
+}
+
+.text-decoration-none{
+    text-decoration: none;
+    color: brown;
     
 }
 
